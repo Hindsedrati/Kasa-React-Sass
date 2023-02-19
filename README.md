@@ -1,3 +1,16 @@
+# Kasa P7 OC
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
+### Attentes:
+Apprendre React et développer le projet avec 
+
+### Points Importants:
+* Creact React App
+* React Router 
+* Style: utilisation de Sass
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

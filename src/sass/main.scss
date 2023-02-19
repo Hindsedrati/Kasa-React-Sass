@@ -1,0 +1,12 @@
+@import '../sass/Utils/mixins';
+@import '../sass/Utils/variables';
+
+@import './Base/normalized';
+
+@import '../components/Banner/banner';
+
+@import '../Layouts/Header/Header';
+@import '../Layouts/Footer/Footer';
+
+
+@import '../pages/Logement/Logement';
