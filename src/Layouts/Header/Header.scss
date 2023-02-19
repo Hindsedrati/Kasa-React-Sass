@@ -1,0 +1,52 @@
+@import '../../sass/Utils/variables';
+
+.header{
+    &__container{
+    width: 100%;
+    max-width: 1240px;
+    min-width: 240px;
+    height: 68px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &logo{
+        max-width: 210px;
+    }
+    &__link{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    }
+    &__link__child{
+        font-size: 24px;
+        font-weight: 500;
+        text-align: right;
+        color: #FF6060;
+        margin-left: 3rem;
+        &--active{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .header{
+        &__container{
+            &__logo{
+                width: 30%;
+            }
+       
+        }  
+        &__link__child{
+            margin-left: 0.5rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            &--active{
+                text-decoration: underline;
+            }
+        } 
+    }
+}
