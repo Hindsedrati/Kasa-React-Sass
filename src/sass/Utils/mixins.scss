@@ -6,7 +6,7 @@
     color: $primary-color;
     }
     
-    /* (LOGEMENT) -> DROPDOWN /
+/* (LOGEMENT) -> DROPDOWN /
     / pour faire tourner la flèche de la dropdown de -90 degrés */
     @mixin dropdown-rotate {
     transition: transform .2s ease-in-out;

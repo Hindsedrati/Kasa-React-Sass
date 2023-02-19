@@ -1,15 +1,16 @@
-import './About.scss';
-import Collapse from "../../components/Collapse/Index";
-import Image from "../../assets/about-banner.jpg";
+import './About.scss'; 
+import Collapse from "../../components/Collapse/Index"; 
+import Image from "../../assets/about-banner.jpg"; 
 
 function About () {
   return (
-    <main className="about">
-        <div className="about__banner">
-            <img src={ Image } alt="Paysages de montagne"/>
+    <main className="about"> 
+        <div className="about__banner"> 
+            <img src={ Image } alt="Paysages de montagne"/> 
         </div>
-        <div className="about__info">
-            <Collapse categorie="about" title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les info sont régulièrement vérifiées  par nos équipes." />
+        <div className="about__info"> 
+        {/*ajoute d'un composant Collapse avec les props "categorie", "title" et "content" */}
+            <Collapse categorie="about" title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les info sont régulièrement vérifiées  par nos équipes." /> 
             <Collapse categorie="about" title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
             <Collapse categorie="about" title="Service" content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
             <Collapse categorie="about" title="Sécurité" content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." />
@@ -18,4 +19,5 @@ function About () {
   );
 };
 
-export default About
+export default About 
+// exporte le composant About pour pouvoir l'utiliser ailleurs dans l'application

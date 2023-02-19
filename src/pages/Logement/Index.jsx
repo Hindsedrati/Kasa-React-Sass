@@ -68,6 +68,6 @@ return (
     </main>
 );
 
-    }
+}
 
 export default Logement;

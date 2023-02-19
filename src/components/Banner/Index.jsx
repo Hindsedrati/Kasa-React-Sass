@@ -1,7 +1,9 @@
 import './banner.scss'
 import Image from '../../assets/Home-banner.png'
 
+// Définition d'un composant fonctionnel Banner
 function Banner() {
+    // Retourne le code JSX qui définit la bannière
     return (
         <section className='banner'>
             <div className='banner__style'></div>
@@ -11,4 +13,5 @@ function Banner() {
     )
 }
 
+// Exporte le composant Banner pour être utilisé ailleurs
 export default Banner

@@ -11,7 +11,10 @@ import Footer from './Layouts/Footer/Index';
 
 import './style.css';
 
+// Création de la racine pour le rendu de l'application
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Rendu de l'application
 root.render(
   <React.StrictMode>
     <Router>
@@ -21,16 +24,10 @@ root.render(
           <Route path="/a-propos" element={ <About/> } />
           <Route path="/logements" element={ <Logement/> } />
           <Route path="*" element={ <Error/> } />
-            {/* (*) ça veut dire que tout ce qu'est different des autres pages se dirige vers la page d'erreur */}
-            
+            {/* (*) ça veut dire que tout ce qu'est différent des autres pages se dirige vers la page d'erreur */}
         </Routes>
         <Footer/>
     </Router>
-    
   </React.StrictMode>
-  
-  /* ça permet de render 2x*/
-  
+  /* La propriété 'StrictMode' active des vérifications supplémentaires et peut générer des avertissements dans la console du navigateur */
 );
-
-

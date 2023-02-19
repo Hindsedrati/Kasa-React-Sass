@@ -1,15 +1,20 @@
+// Import des variables de style et des mixins
 @import "../../sass/Utils/variables";
 @import '../../sass/Utils/mixins.scss';
 
+// Définition des styles pour la classe 'err'
 .err{
 
+    // Styles pour le titre de la page d'erreur
     & h1{
         font-size: 288px; 
         font-weight: 700;
         line-height: 410.69px;
-        color: $primary-color;
+        color: $primary-color; // Utilisation de la variable 'primary-color' définie dans les variables de style
         text-align: center;
     }
+    
+    // Styles pour le message d'erreur
     & p{
         font-size: 36px;
         font-weight: 500;
@@ -17,6 +22,8 @@
         color: $primary-color;
         text-align: center;
     }
+    
+    // Styles pour le lien de retour
     & a{
         font-size: 18px;
         font-weight: 500;
@@ -29,6 +36,7 @@
     }
 }
 
+//pour les écrans avec une largeur maximale de 768px
 @media (max-width: 768px) { 
     .err{
         & h1{
@@ -36,6 +44,8 @@
         }
     }
 }
+
+// pour les écrans avec une largeur maximale de 425px
 @media (max-width: 425px) { 
     .err{
         height: 50vh;
