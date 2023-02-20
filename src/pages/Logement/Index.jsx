@@ -61,7 +61,17 @@ return (
         <div className="product__info">
             {/* Affichage d'un composant Collapse pour la description et les équipements du logement */}
             <Collapse categorie="product" title="Description" content={description} />
-            <Collapse categorie="product" title="Équipements" content={equipments} />
+            <Collapse categorie="product" 
+            title="Équipements" 
+            content={
+                <ul>
+                    {equipments.map((equipment, index) =>{
+                    return(
+                        <li key={index}>{ equipment }</li>)}
+                    )}
+                </ul>
+                }
+                 />
         </div>
         {/*cette partie du code génère une liste de tags du logement en utilisant la méthode map pour itérer sur 
         chaque élément du tableau tags de l'objet logement, puis crée un composant Tags pour chaque élément du tableau.*/}
