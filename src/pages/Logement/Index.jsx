@@ -34,8 +34,9 @@ if(logement === undefined) {
 }
 
 // Extraction des données du logement pour les afficher dans le rendu
+// syntaxe de déstructuration pour éviter la redondance
 const { title, location, rating, host, equipments, description, pictures } = logement;
-
+ 
 // Rendu du composant Logement avec toutes les informations
 return (
     <main className="product">
@@ -49,7 +50,7 @@ return (
                     {logement.tags.map((tag, index) => (
                     <Tags key={index} getTag={tag} />
                     ))}
-                </ul>
+                </ul> 
             </div>
             <div className="product__content__right">
                 {/* Affichage du composant Host avec les données du logement */}

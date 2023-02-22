@@ -4,7 +4,7 @@ import './Card.scss'
 // Importation du composant Link de react-router-dom pour naviguer vers les pages de détails de logements
 import { Link } from 'react-router-dom'
 
-// Importation des données de logement
+// Importation des données de logemen
 import { logements } from '../../data/logements'
 
 /* Composant Card qui permet de générer les cartes des logements */
